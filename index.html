@@ -1,16 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta http-equiv="refresh" content="1;URL=http://hunet.byethost3.com/" /> -->
   <title>hunet | Redirecting to hunet</title>
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/hunetweb/hunetweb.github.io/main/favicon.ico" type="image/x-icon">
-<body>
-</body>
-<style>
-body {
-background: url(https://raw.githubusercontent.com/hunetweb/hunetweb.github.io/main/Kgoxh7n.png);
-    background-size: 17% 60%;
-	background-position: center;
-    background-repeat: no-repeat;
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
 
-}
-</style>
-<meta http-equiv="refresh" content="1;URL=http://hunet.byethost3.com/" />
+    picture {
+      display: block;
+      width: 30%;
+      max-width: 640px;
+    }
+
+    .scale-down {
+      object-fit: scale-down;
+      position: relative;
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    h1 {
+      font-size: 36px;
+      font-family: Merriweather, sans;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 560px) {
+      h1 {
+        font-size: 60px;
+      }
+    }
+
+    @media screen and (min-width: 920px) {
+      h1 {
+        font-size: 72px;
+      }
+    }
+    
+    @media screen and (min-width: 920px) {
+      h1 {
+        font-size: 98px;
+      }
+    }
+  </style>
 </head>
+<body>
+    <div style="display: flex; flex-direction: column; justify-content:baseline; align-items: center; padding: 30px;">
+      <picture>
+        <source class="scale-down" srcset="https://hunetweb.github.io/logo.png" media="(max-width: 600px)">
+        <source class="scale-down" srcset="https://github.com/hunetweb/hunetweb.github.io/blob/main/780780.png?raw=true" media="(max-width: 1680px)">
+        <img class="scale-down" src="https://github.com/hunetweb/hunetweb.github.io/blob/main/12801280.png?raw=true" alt="logo">
+       </picture>
+      <h1>hunet</h1>
+   </div>
+</body>
+</html>
