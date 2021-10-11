@@ -4,7 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="favicon" href="https://raw.githubusercontent.com/hunetweb/hunetweb.github.io/main/favicon.ico" type="image/x-icon">
-   <meta http-equiv="refresh" content="1;URL=http://hunet.byethost3.com/" /> 
+	
+	<script>
+  var url = "https://updown.io/api/checks?api-key=RHEr516Gh3fzy82Z2JYD";
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      
+     if(xhr.status === 200){
+        window.location.replace("http://hunet.byethost3.com/");
+     }else{
+      window.location.replace("https://web.archive.org/web/20211006204841/http://hunet.byethost3.com/");
+      }
+     
+   }};
+
+xhr.send();
+  
+
+</script>
+	
+	
+  <!-- <meta http-equiv="refresh" content="1;URL=http://hunet.byethost3.com/" />  -->
 <!--<meta http-equiv="refresh" content="1;URL=https://web.archive.org/web/20211006204841/http://hunet.byethost3.com/" />-->
   <title>hunet</title>
   <style>
