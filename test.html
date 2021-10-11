@@ -1,0 +1,16 @@
+<html>
+<script>
+  var url = "https://updown.io/api/checks?api-key=RHEr516Gh3fzy82Z2JYD";
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+xhr.send();
+</script>
+</html>
